@@ -360,6 +360,86 @@ header {
   width: 100%;
   margin-top: 5px;
 }
+
+/* Donate page */
+.donate__title {
+  text-align: center;
+  margin: auto;
+  line-height: 1.7;
+  width: 70%;
+}
+
+.donate__title h2 {
+  font-family: "Sniglet", cursive !important;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.donate__text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.donate__box {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+}
+
+.donate__box h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 25px;
+  font-weight: bold;
+}
+
+.donate__box h4 {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.donate__box img {
+  width: 40%;
+  margin-left: 0px;
+}
+
+.donate__box a.btn {
+  margin: 10px 0;
+}
+
+.donate__mp-links {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.donate__box--first {
+  background-color: var(--gray-light-color);
+  margin-top: 50px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.donate__box--secondary {
+  background-color: var(--primary-light-color);
+}
+
+.donate__box--secondary img {
+  margin-right: 0;
+}
+
+.donate__box--tertiary {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: calc(var(--footer-height) * -1);
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -574,6 +654,27 @@ footer .footer__email a {
   .contact__text p {
     margin: 10px 0 30px 0;
   }
+
+  /* Donate page */
+  .donate__title h2 {
+    padding: 0;
+  }
+
+  .donate__box--first {
+    margin-top: 20px;
+  }
+
+  .donate__box img {
+    display: none;
+  }
+
+  .donate__text {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   /* Footer */
   footer {
     justify-content: space-between;
@@ -698,6 +799,11 @@ footer .footer__email a {
 
   .contact-form__field--phone,
   .contact-form__field--reason {
+    width: 100%;
+  }
+
+  /* Donate */
+  .donate__mp-links {
     width: 100%;
   }
 }
