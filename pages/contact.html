@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogar amor de galgo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar__container">
+          <a
+            href="../index.html"
+            class="navbar__logo navbar__logo--mobile navbar-brand"
+          >
+            <img src="../img/logo.png" alt="Logo HAG" />
+          </a>
+          <a class="btn navbar__donate-btn" href="./donate.html">
+            <i class="fas fa-dollar-sign fa-lg"></i>
+            <span>DONAR</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fa-xl"></i>
+          </button>
+          <div class="navbar__links collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+              <li class="navbar__left">
+                <a href="./about-us.html">Nosotros</a>
+              </li>
+              <li class="navbar__left">
+                <a href="./help.html">¿Como ayudo?</a>
+              </li>
+              <li class="navbar__logo navbar__logo--web navbar-brand">
+                <a href="../index.html">
+                  <img src="../img/logo.png" alt="Logo HAG" />
+                </a>
+              </li>
+              <li class="navbar__right">
+                <a href="./adopt.html">Adoptá</a>
+              </li>
+              <li class="navbar__right active">
+                <a href="./contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact row">
+        <div class="contact__text col-12 col-lg-6">
+          <h2 class="font-sniglet">Contactate con nosotros</h2>
+          <p>
+            Si tenes dudas acerca de adopciones, donaciones, o de como ser parte
+            de nuestro equipo envianos un mensaje y nos contactaremos con vos en
+            la brevedad.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <form class="contact-form" action="contact">
+            <div class="contact-form__field form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="Name"
+                placeholder="Nombre"
+              />
+              <label for="Name">Nombre</label>
+            </div>
+            <div class="contact-form__phone-reason">
+              <div
+                class="contact-form__field contact-form__field--phone form-floating"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone-number"
+                  placeholder="Telefono"
+                />
+                <label for="phone-number">Telefono</label>
+              </div>
+              <select
+                class="contact-form__field contact-form__field--reason form-select"
+                id="select-option"
+              >
+                <option selected disabled>Selecciona una opción</option>
+                <option value="1">Donaciones</option>
+                <option value="2">Equipo de transitos</option>
+                <option value="3">Equipo de traslados</option>
+                <option value="4">Adopciones</option>
+                <option value="5">Otros</option>
+              </select>
+            </div>
+            <div class="contact-form__field form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                placeholder="Email"
+              />
+              <label for="Email">Email</label>
+            </div>
+            <div class="contact-form__field form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Escribe tu mensaje"
+                id="Text-area"
+                style="height: 150px"
+              ></textarea>
+              <label for="Text-area">Escribe tu mensaje</label>
+            </div>
+            <button class="contact-form__btn btn" type="submit">
+              <i class="fa-solid fa-paw fa-xl"></i>Enviar
+            </button>
+          </form>
+        </div>
+
+        <!-- <form action="contact">
+            <input type="text" id="nombre" placeholder="Nombre" />
+          <div class="form__phone-reason">
+            <input type="text" id="tel" placeholder="Telefono" />
+            <select name="opciones" id="opciones">
+              <option disabled selected>Seleccioná una opcion</option>
+              <option>Donaciones</option>
+              <option>Equipo de transitos</option>
+              <option>Equipo de traslados</option>
+              <option>Adopciones</option>
+              <option>Otros</option>
+            </select>
+          </div>
+          <input type="text" id="email" placeholder="Email" />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="Escribe tu mensaje"
+            cols="36"
+            rows="10"
+          ></textarea>
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-paw fa-xl"></i>Enviar
+          </button>
+        </form> -->
+      </section>
+    </main>
+    <footer>
+      <div class="footer__logo">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="Logo HAG" />
+        </a>
+      </div>
+      <div class="footer__social-media-links">
+        <a
+          class="social-media-link"
+          href="https://www.instagram.com/hogaramordegalgo/"
+        >
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+
+        <a
+          class="social-media-link"
+          href="https://web.facebook.com/hogarsilgassman"
+        >
+          <i class="fa-brands fa-facebook-f fa-xl"></i>
+        </a>
+        <a
+          class="social-media-link"
+          href="https://www.youtube.com/watch?v=sF3jLu5O9sI"
+        >
+          <i class="fa-brands fa-youtube fa-xl"></i>
+        </a>
+        <a
+          class="social-media-link social-media-link--email"
+          href="https://www.youtube.com/watch?v=sF3jLu5O9sI"
+        >
+          <i class="far fa-envelope fa-xl"></i>
+        </a>
+      </div>
+      <div class="footer__email">
+        <a href="mailto:hogaramordegalgo@gmail.com">
+          <p>Hogaramordegalgo@gmail.com</p>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7bff76bb37.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -34,6 +34,23 @@ a {
   text-decoration: none;
   color: var(--black-light-color);
 }
+
+input,
+::placeholder,
+select {
+  font-family: "Quicksand", sans-serif;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-light-color);
+}
+
+.form-select {
+  padding: 1rem 0.75rem;
+}
+
 /* Utilities classes */
 .font-sniglet {
   font-family: "Sniglet", cursive !important;
@@ -301,6 +318,48 @@ header {
   height: 400px;
   object-fit: cover;
 }
+
+/* Contact page */
+.contact {
+  margin: 0 50px;
+  padding: 70px 30px;
+}
+
+.contact__text {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__text p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 20px 0;
+}
+
+.contact-form__field {
+  margin-bottom: 5px;
+}
+
+.contact-form__phone-reason {
+  display: flex;
+  gap: 5px;
+}
+
+.contact-form__field--phone,
+.contact-form__field--reason {
+  width: 50%;
+}
+
+.contact-form__btn {
+  width: 100%;
+  margin-top: 5px;
+}
 /* Footer */
 footer {
   display: flex;
@@ -500,6 +559,21 @@ footer .footer__email a {
   .adopt-gallery__item {
     height: 200px;
   }
+
+  /* Contact */
+  .contact {
+    padding: 0 30px;
+  }
+
+  .contact__text {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact__text p {
+    margin: 10px 0 30px 0;
+  }
   /* Footer */
   footer {
     justify-content: space-between;
@@ -600,5 +674,30 @@ footer .footer__email a {
     width: 40vw;
     height: 200px;
     object-fit: cover;
+  }
+
+  /* Contact page */
+  .contact {
+    margin: 0;
+  }
+
+  .contact__text {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact__text {
+    padding: 0;
+  }
+
+  .contact-form__phone-reason {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .contact-form__field--phone,
+  .contact-form__field--reason {
+    width: 100%;
   }
 }
