@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Sniglet&display=swap");
+
+:root {
+  --primary-color: #fa6a66;
+  --secondary-color: #efe5e5;
+  --primary-light-color: #f48d90;
+  --gray-color: #c7c2c3;
+  --gray-light-color: #d9d9d9;
+  --gray-dark-color: #b7b5b5;
+  --black-light-color: #545454;
+  --header-height: 75px;
+  --footer-height: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  color: var(--black-light-color);
+  background-color: var(--secondary-color);
+}
+
+main {
+  min-height: calc(100vh - 2 * var(--header-height) - 2 * var(--footer-height));
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-light-color);
+}
+/* Utilities classes */
+.font-sniglet {
+  font-family: "Sniglet", cursive !important;
+}
+
+.btn {
+  font-family: "Sniglet", cursive;
+  background-color: var(--gray-light-color);
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--gray-dark-color);
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+.box-gray {
+  background-color: var(--gray-light-color);
+  margin: 40px auto;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  height: var(--header-height);
+  background-color: var(--primary-color);
+  margin-bottom: var(--header-height);
+}
+
+.navbar {
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar ul {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0 250px;
+}
+
+.navbar ul li a {
+  font-family: "Sniglet", cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar ul li.active a {
+  color: var(--secondary-color);
+}
+
+.navbar__logo--web {
+  display: flex;
+}
+
+.navbar__logo--mobile {
+  display: none;
+}
+
+.navbar__logo img {
+  width: 120px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+}
+
+.navbar__logo,
+.navbar__left,
+.navbar__right {
+  width: 20%;
+}
+
+.navbar__donate-btn {
+  position: absolute;
+  right: 70px;
+}
+
+/* Banner */
+.banner {
+  margin-top: -60px;
+}
+
+/* Shop section */
+.shop {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.shop article {
+  width: 75%;
+  margin: auto;
+  border: none;
+}
+
+.shop article:hover {
+  background-color: var(--gray-dark-color);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.shop article h5 {
+  text-transform: uppercase;
+}
+.shop article a {
+  background-color: var(--black-light-color);
+  color: var(--gray-light-color);
+}
+
+.shop article a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Fairs section */
+.fairs {
+  background-color: var(--gray-light-color);
+  padding: 3rem;
+}
+
+.fairs__img {
+  display: flex;
+  justify-content: center;
+}
+
+.fairs__img img {
+  width: 70%;
+}
+
+.fairs__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-right: 4rem;
+}
+
+/* Before-After section */
+.bef-aft {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.bef-aft__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: var(--footer-height);
+  padding: 0 50px;
+  margin-top: var(--footer-height);
+  background-color: var(--primary-color);
+}
+
+footer .footer__logo {
+  width: 25%;
+}
+
+footer .footer__logo a {
+  display: flex;
+  margin-top: -70px;
+  width: fit-content;
+}
+
+footer .footer__logo a img {
+  width: 120px;
+}
+
+footer .footer__social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+footer .footer__social-media-links .social-media-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5px;
+  width: 5px;
+  padding: 20px;
+  border: 3px solid var(--black-light-color);
+  border-radius: 50px;
+  color: var(--black-light-color);
+}
+
+footer .social-media-link--email {
+  display: none;
+}
+
+footer .footer__email {
+  width: 25%;
+  text-align: end;
+}
+
+footer .footer__email a {
+  font-size: 20px;
+  width: fit-content;
+  text-align: right;
+}
+
+/* Applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  html {
+    font-size: 85%;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0;
+    z-index: 10;
+  }
+
+  .navbar-toggler {
+    border: none;
+    color: var(--black-light-color);
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: calc(var(--header-height) - 1px);
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+
+  .navbar__links ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .navbar__links ul li {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+
+  .navbar__links ul li:first-child {
+    margin-top: 1rem;
+  }
+
+  .navbar__links ul li:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .navbar__logo--web {
+    display: none;
+  }
+
+  .navbar__logo--mobile {
+    display: flex;
+  }
+
+  .navbar__donate-btn {
+    right: 90px;
+  }
+
+  /* Shop section */
+  .shop {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .shop article {
+    width: 100%;
+  }
+
+  /* Fairs section */
+  .fairs__img img {
+    width: 50%;
+  }
+
+  .fairs__text {
+    padding-right: 0;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-between;
+  }
+
+  footer .footer__social-media-links {
+    justify-content: end;
+  }
+
+  footer .social-media-link--email {
+    display: flex;
+  }
+
+  footer .footer__email {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer .footer__logo {
+    display: none;
+  }
+
+  footer .footer__social-media-links {
+    justify-content: center;
+  }
+}
+
+/* Applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  main {
+    /* Sumar al min height el margin top negativo que le estamos dando */
+    min-height: calc(
+      100vh - 2 * var(--header-height) - 2 * var(--footer-height) +
+        var(--header-height) / 2
+    );
+    margin-top: calc(var(--header-height) / 2 * -1);
+  }
+
+  /* Navbar */
+  .navbar__logo img {
+    top: 5px;
+    width: 65px;
+  }
+
+  .navbar__donate-btn {
+    padding: 0.5rem 1rem;
+    right: 65px;
+  }
+
+  .navbar__donate-btn i {
+    margin-right: 0;
+  }
+
+  .navbar__donate-btn span {
+    display: none;
+  }
+
+  /* Shop section */
+  .shop article {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  /* Before-After section */
+  .bef-aft__text i {
+    transform: rotate(90deg);
+  }
+}
