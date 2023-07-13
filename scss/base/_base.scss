@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  color: $black-light-color;
+  background-color: $secondary-color;
+}
+
+main {
+  min-height: calc(100vh - 2 * $header-height - 2 * $footer-height);
+
+  @include responsive(phone) {
+    min-height: calc(
+      100vh - 2 * $header-height - 2 * $footer-height + $header-height / 2
+    );
+    margin-top: calc($header-height / 2 * -1);
+  }
+}
+
+@include responsive(tablet) {
+  html {
+    font-size: 85%;
+  }
+}

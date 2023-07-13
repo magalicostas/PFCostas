@@ -1,0 +1,15 @@
+.btn {
+  font-family: "Sniglet", cursive;
+  background-color: $gray-light-color;
+  padding: 0.5rem 1.5rem;
+  &:hover {
+    background-color: $gray-dark-color;
+  }
+  i {
+    margin-right: 10px;
+  }
+  article div a {
+    display: flex;
+    align-items: end;
+  }
+}

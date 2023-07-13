@@ -1,0 +1,67 @@
+.contact {
+  margin: 0 50px;
+  padding: 70px 30px;
+  &__text {
+    width: 50%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      text-align: center;
+      font-family: "Quicksand", sans-serif;
+      margin: 20px 0;
+    }
+  }
+  &-form {
+    &__field {
+      margin-bottom: 5px;
+    }
+    &__phone-reason {
+      display: flex;
+      gap: 5px;
+    }
+    &__field--phone,
+    &__field--reason {
+      width: 50%;
+    }
+    &__btn {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  @include responsive(tablet) {
+    padding: 0 30px;
+
+    &__text {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      p {
+        margin: 10px 0 30px 0;
+      }
+    }
+  }
+  @include responsive(phone) {
+    margin: 0;
+
+    &__text {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      padding: 0;
+    }
+
+    &-form {
+      &__phone-reason {
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      &__field--phone,
+      &__field--reason {
+        width: 100%;
+      }
+    }
+  }
+}

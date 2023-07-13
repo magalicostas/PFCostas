@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Sniglet&display=swap");
+
+.font-sniglet {
+  font-family: "Sniglet", cursive !important;
+}
+
+a {
+  text-decoration: none;
+  color: $black-light-color;
+}
+
+input,
+::placeholder,
+select {
+  font-family: "Quicksand", sans-serif;
+}

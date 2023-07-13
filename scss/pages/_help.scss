@@ -1,0 +1,83 @@
+.help {
+  padding: 20px 20px;
+  &__title {
+    text-align: center;
+    margin: auto;
+    line-height: 1.7;
+    width: 70%;
+    h2 {
+      text-align: center;
+    }
+  }
+  &-article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+    &__img {
+      width: 40%;
+      background-color: $gray-dark-color;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
+    }
+    &__icons {
+      color: $primary-light-color;
+      font-size: 70px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      padding: 0 100px;
+      line-height: 1.7;
+      a {
+        margin-top: 20px;
+      }
+    }
+  }
+  @include responsive(tablet) {
+    padding: 0 15px;
+
+    &-article {
+      background-color: $gray-light-color;
+      margin: 60px 80px;
+      padding: 40px 40px;
+      border-radius: 30px;
+      &__img {
+        display: none;
+      }
+
+      &__text {
+        padding: 0 30px;
+        width: 100%;
+        h4 {
+          font-weight: bold;
+          padding: 15px 10px;
+        }
+        a.btn {
+          background-color: $primary-light-color;
+        }
+      }
+    }
+  }
+  @include responsive(phone) {
+    &-article {
+      padding: 25px 15px;
+      margin: 15px 5px;
+
+      &__text {
+        padding: 0 10px;
+      }
+
+      &__icons {
+        font-size: 50px;
+      }
+    }
+  }
+}
