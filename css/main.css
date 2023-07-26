@@ -422,8 +422,14 @@ header .navbar__donate-btn {
   .adopt {
     padding: 0;
   }
+  .adopt-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 0 calc(10vw - 5px);
+  }
   .adopt-gallery__item {
-    height: 200px;
+    width: 40vw;
+    height: 300px;
   }
 }
 @media (max-width: 767.98px) {
@@ -431,14 +437,11 @@ header .navbar__donate-btn {
     margin-bottom: 2rem;
   }
   .adopt-gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
-    padding: 0 calc(10vw - 5px);
   }
   .adopt-gallery__item {
-    width: 40vw;
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
   }
 }
 

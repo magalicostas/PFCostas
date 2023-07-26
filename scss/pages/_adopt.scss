@@ -19,9 +19,14 @@
   }
   @include responsive(tablet) {
     padding: 0;
-
-    &-gallery__item {
-      height: 200px;
+    &-gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      padding: 0 calc(10vw - 5px);
+      &__item {
+        width: 40vw;
+        height: 300px;
+      }
     }
   }
   @include responsive(phone) {
@@ -30,13 +35,10 @@
     }
 
     &-gallery {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 10px;
-      padding: 0 calc(10vw - 5px);
       &__item {
-        width: 40vw;
-        height: 200px;
-        object-fit: cover;
+        width: 100%;
       }
     }
   }
