@@ -633,6 +633,30 @@ header .navbar__donate-btn {
   }
 }
 
+.not-found {
+  display: flex;
+}
+.not-found__img {
+  width: 40%;
+}
+.not-found__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+@media (max-width: 991.98px) {
+  .not-found {
+    flex-direction: column-reverse;
+  }
+  .not-found__img {
+    width: 100%;
+  }
+  .not-found__text {
+    padding: 0 2rem;
+  }
+}
+
 .btn {
   font-family: "Sniglet", cursive;
   background-color: #d9d9d9;
